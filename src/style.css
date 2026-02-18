@@ -1,3 +1,4 @@
+/*--------------------Global--------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +34,7 @@ p {
   font-style: normal;
   font-size: 22px;
 }
+/*--------------------indexpage--------------------*/
 nav {
   display: flex;
   height: 140px;
@@ -50,12 +52,53 @@ nav {
   margin-right: 2rem;
   gap: 2rem;
 }
+.nav-options a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: black;
+}
 
+.nav-options a:hover {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: grey;
+}
+
+.hero {
+  position: relative;
+}
 .hero-img {
   width: 100vw;
   height: 40rem;
   object-fit: cover;
   display: block;
+}
+
+.hero-txt {
+  position: absolute;
+  left: 15%;
+  top: 30%;
+  width: 25rem;
+}
+
+.hero button {
+  position: absolute;
+  left: 15%;
+  top: 60%;
+  width: 18rem;
+  height: 6rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #de9f5b;
+  color: white;
 }
 
 .information-container {
@@ -117,6 +160,7 @@ nav {
   border-radius: 20px;
 }
 
+/*--------------------footer--------------------*/
 footer img {
   width: 100vw;
   height: 20rem;
