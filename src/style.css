@@ -11,12 +11,31 @@ h1 {
   font-size: 48px;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+  }
+}
+
 h2 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+  }
 }
 
 h3 {
@@ -27,6 +46,16 @@ h3 {
   font-size: 30px;
 }
 
+@media (max-width: 768px) {
+  h3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+  }
+}
+
 p {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -34,25 +63,36 @@ p {
   font-style: normal;
   font-size: 22px;
 }
+
+@media (max-width: 768px) {
+  p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+}
 /*--------------------indexpage--------------------*/
-nav {
+.nav-desktop {
   display: flex;
   height: 140px;
   width: 100vw;
   background-color: #fdfdfd;
 }
+
 .nav-logo {
   display: flex;
   align-items: center;
 }
-.nav-options {
+.nav-desktop-options {
   display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: 2rem;
   gap: 2rem;
 }
-.nav-options a {
+.nav-desktop-options a {
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -62,7 +102,7 @@ nav {
   color: black;
 }
 
-.nav-options a:hover {
+.nav-desktop-options a:hover {
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -70,6 +110,55 @@ nav {
   font-style: normal;
   font-size: 30px;
   color: grey;
+}
+.nav-desktop-options a:active {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: grey;
+  transform: translateY(2px);
+}
+.nav-mobil {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobil {
+    display: flex;
+    height: 96px;
+    width: 100%;
+    background-color: #fdfdfd;
+    align-items: center;
+  }
+
+  .nav-mobil img {
+    height: 77px;
+    width: 89px;
+  }
+  .nav-mobil-options {
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+  .nav-mobil-options a {
+    text-decoration: none;
+    color: black;
+  }
+  .nav-mobil-options a:hover {
+    text-decoration: none;
+    color: grey;
+  }
+  .nav-mobil-options a:active {
+    text-decoration: none;
+    color: grey;
+    transform: translateY(1px);
+  }
 }
 
 .hero {
@@ -110,6 +199,84 @@ nav {
   border: none;
   background-color: #fab366;
   color: white;
+}
+.hero button:active {
+  position: absolute;
+  left: 15%;
+  top: 60%;
+  width: 18rem;
+  height: 6rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #fab366;
+  color: white;
+  transform: translateY(2px);
+}
+.hero-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hero {
+    display: none;
+  }
+  .hero-mobile {
+    display: block;
+    position: relative;
+  }
+  .hero-mobile-img {
+    width: 100%;
+    height: 328px;
+    object-fit: cover;
+    display: block;
+    mask-image: linear-gradient(to top, black 65%, transparent 100%);
+  }
+
+  .hero-mobile-txt {
+    position: absolute;
+    left: 15%;
+    top: 22%;
+    width: 13rem;
+  }
+
+  .hero-mobile button {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -6%;
+    width: 259px;
+    height: 37px;
+    border-radius: 50px;
+    border: none;
+    background-color: #de9f5b;
+    color: white;
+    z-index: 1000;
+  }
+  .hero-mobile button:hover {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -6%;
+    width: 259px;
+    height: 37px;
+    border-radius: 50px;
+    border: none;
+    background-color: #fab366;
+    color: white;
+    z-index: 1000;
+  }
+  .hero-mobile button:active {
+    position: absolute;
+    transform: translateX(-50%) translateY(2px);
+    left: 50%;
+    bottom: -6%;
+    width: 259px;
+    height: 37px;
+    border-radius: 50px;
+    border: none;
+    background-color: #fab366;
+    color: white;
+    z-index: 1000;
+  }
 }
 
 .information-container {
@@ -157,6 +324,43 @@ nav {
   align-items: center;
 }
 
+.information-container-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .information-container {
+    display: none;
+  }
+  .information-container-mobile {
+    background-color: #f4ece3;
+    height: 310px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .info-card-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    width: 341px;
+    height: 175px;
+    border-radius: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .page-indicator {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
 .preview-petsitter-container {
   width: 100vw;
   height: 40rem;
@@ -183,6 +387,21 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
+}
+
+.preview-petsitter-card img {
+  width: 200px;
+  height: 172px;
+}
+.price-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.price-row img {
+  height: 30%;
+  width: 40%;
 }
 .preview-petsitter-card button {
   width: 250px;
@@ -191,15 +410,24 @@ nav {
   color: white;
   border: none;
   border-radius: 50px;
-  margin-top: 2rem;
 }
-.preview-petsitter-card img {
-  width: 210px;
-  height: 172px;
+
+@media (max-width: 768px) {
+  .preview-petsitter-container {
+    display: none;
+  }
 }
-/*--------------------footer--------------------*/
+/*-----------footer--------------------*/
 footer img {
   width: 100vw;
   height: 20rem;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  footer img {
+    width: 100%;
+    height: 142px;
+    object-fit: cover;
+  }
 }

@@ -8,18 +8,28 @@
   </head>
   <body>
     <header>
-      <nav>
+      <!--nav for desktop-->
+      <nav class="nav-desktop">
         <div class="nav-logo">
           <img src="assets/logo.png" />
         </div>
 
-        <div class="nav-options">
+        <div class="nav-desktop-options">
           <a href="">Registrer deg</a>
           <a href="">Logg inn</a>
         </div>
       </nav>
+      <!--nav for mobil-->
+      <nav class="nav-mobil">
+        <img src="assets/logo.png" />
+
+        <div class="nav-mobil-options">
+          <a href=""><h3>Logg inn</h3></a>
+        </div>
+      </nav>
     </header>
     <main>
+      <!--hero for desktop-->
       <section class="hero">
         <img
           class="hero-img"
@@ -32,6 +42,19 @@
         <button><h3>Registrer deg</h3></button>
       </section>
 
+      <!--hero for mobile-->
+      <section class="hero-mobile">
+        <img
+          class="hero-mobile-img"
+          src="assets/background hero 2.1.png"
+          alt="Bilde av en hund på en eng"
+        />
+        <div class="hero-mobile-txt">
+          <h1>Trygg hundepass, når du trenger det!</h1>
+        </div>
+        <button><h3>Registrer deg</h3></button>
+      </section>
+      <!-- Information section for desktop-->
       <section class="information-container">
         <h2>Slik fungerer potepass</h2>
 
@@ -62,6 +85,22 @@
           </div>
         </div>
       </section>
+      <!-- Information section for mobile-->
+      <section class="information-container-mobile">
+        <h2>Slik fungerer potepass</h2>
+        <div class="info-card-mobile">
+          <div class="page-indicator">
+            <img src="/assets/Rectangle 219.png" alt="sidevisningsindikator" />
+            <img src="/assets/Rectangle 221.png" alt="sidevisningsindikator" />
+            <img src="/assets/Rectangle 221.png" alt="sidevisningsindikator" />
+          </div>
+          <img
+            src="/assets/opprettbruker.png"
+            alt="to ikoner som skal illustrere hundepasser og hundeeier med hund "
+          />
+          <h3><strong>Opprett bruker</strong></h3>
+        </div>
+      </section>
 
       <section class="preview-petsitter-container">
         <h2>Våre flinke hundepassere</h2>
@@ -73,7 +112,10 @@
             />
             <p><strong>navn</strong></p>
             <p>sted</p>
-            <p>pris</p>
+            <div class="price-row">
+              <img src="assets/poteikon.png" alt="poteikon" />
+              <p>pris</p>
+            </div>
             <button><p>Se profil</p></button>
           </div>
           <div class="preview-petsitter-card">
@@ -83,7 +125,10 @@
             />
             <p><strong>navn</strong></p>
             <p>sted</p>
-            <p>pris</p>
+            <div class="price-row">
+              <img src="assets/poteikon.png" alt="poteikon" />
+              <p>pris</p>
+            </div>
             <button><p>Se profil</p></button>
           </div>
           <div class="preview-petsitter-card">
@@ -93,7 +138,10 @@
             />
             <p><strong>navn</strong></p>
             <p>sted</p>
-            <p>pris</p>
+            <div class="price-row">
+              <img src="assets/poteikon.png" alt="poteikon" />
+              <p>pris</p>
+            </div>
             <button><p>Se profil</p></button>
           </div>
         </div>
