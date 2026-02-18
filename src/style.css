@@ -121,31 +121,40 @@ nav {
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
+.information-container h2 {
+  position: absolute;
+  top: 10%;
+}
 .info-cards {
   display: flex;
   flex-direction: row;
-  gap: 10rem;
-  padding-top: 5rem;
+  gap: 7rem;
+  padding-top: 3rem;
   margin: 3rem, auto, auto, 3rem;
 }
 .info-card {
   display: flex;
+  flex-direction: column;
   background-color: #fdfdfd;
   width: 21rem;
-  height: 20rem;
+  height: 18rem;
   border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .info-cards-img {
   height: 10rem;
   border-radius: 50%;
-  margin-top: -4rem;
+  position: absolute;
+  top: -25%;
 }
 .info-cards-txt {
   align-items: center;
-  display: flex;
 }
 
 .preview-petsitter-container {
@@ -158,6 +167,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
 .preview-petsitter-cards {
   display: flex;
   background-color: #e8ddd3;
@@ -167,7 +177,7 @@ nav {
 }
 .preview-petsitter-card {
   background-color: #fdfdfd;
-  width: 20rem;
+  width: 22rem;
   height: 30rem;
   border-radius: 20px;
 }
