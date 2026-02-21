@@ -342,6 +342,7 @@ p {
     justify-content: center;
     gap: 1rem;
   }
+
   .info-card-mobile {
     display: flex;
     flex-direction: column;
@@ -351,8 +352,17 @@ p {
     border-radius: 20px;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 0.5rem;
   }
+  .page-indicator {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+  }
+
   #info-card-mobile-1of3 {
     display: block;
   }
@@ -361,12 +371,6 @@ p {
   }
   #info-card-mobile-3of3 {
     display: none;
-  }
-  .page-indicator {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding-bottom: 2rem;
   }
 }
 
